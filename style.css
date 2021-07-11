@@ -1,0 +1,274 @@
+@import url(//db.onlinewebfonts.com/c/0e663589b576e1e340e4fc28ea99626c?family=Sitka+Small);
+@font-face {
+  font-family: "Sitka Small";
+  src: url("//db.onlinewebfonts.com/t/0e663589b576e1e340e4fc28ea99626c.eot");
+}
+* {
+  box-sizing: border-box;
+  font-family: "Sitka Small";
+}
+
+body {
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+}
+:root {
+  --textColor: #005dff;
+  --bgColor: rgba(139, 139, 139, 0.22);
+  --boxColor: rgba(194, 194, 194, 0.16);
+}
+.img-cont {
+  height: 10rem;
+  flex-shrink: 1;
+}
+
+.facebook {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.img-down {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  box-shadow: 0px 20px 0px 0px var(--textColor);
+}
+
+.logo {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  height: 16px;
+  width: 16px;
+  object-fit: cover;
+  box-shadow: none;
+}
+
+span {
+  color: grey;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+}
+
+.side {
+  text-align: center;
+  flex-direction: column;
+  position: absolute;
+  right: 0.5rem;
+  width: 10rem;
+  height: 12rem;
+  background-color: rgba(128, 128, 128, 0.513);
+  /* background-color: var(--textColor); */
+  color: var(--textColor);
+  border-radius: 1rem 0 1rem 0;
+  padding: 1rem;
+  overflow-y: scroll;
+}
+
+.fa-cont {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: var(--boxColor);
+  border-radius: 0.1em;
+}
+
+input {
+  outline: none;
+  padding: 10px;
+  font-size: inherit;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid rgba(111, 111, 111, 0.3);
+}
+
+.cap {
+  text-align: center;
+  padding: 5px;
+  background-color: var(--textColor);
+  color: white;
+}
+
+button {
+  font-size: inherit;
+  font-family: inherit;
+  color: white;
+  border: none;
+  box-shadow: 0px 0px 2px grey;
+  cursor: pointer;
+  background-color: var(--textColor);
+  padding: 7px;
+  width: 100px;
+}
+
+button:hover {
+  transform: scale(1.1);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+  transition-duration: 0.5s;
+}
+
+.out-cont {
+  border-bottom: 1px solid var(--textColor);
+  width: 215px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: grey;
+}
+
+.reset {
+  background-color: rgb(220, 20, 20);
+  color: white;
+  margin-top: 1em;
+  padding: 4px;
+}
+
+h1 {
+  position: relative;
+  /* background-color: var(--bgColor); */
+  color: var(--textColor);
+  width: 100%;
+  text-align: center;
+  border-radius: 0.1em;
+  margin-top: 0;
+  background-image: url("./logo.png");
+  background-repeat: no-repeat;
+  background-position: left 0;
+  background-attachment: fixed;
+}
+
+#wizard {
+  border: none;
+  box-shadow: 0px 0px 5px grey;
+  margin-top: 1em;
+  padding: 2.5px;
+  color: var(--textColor);
+  cursor: pointer;
+}
+
+details {
+  margin-top: 1em;
+  text-align: center;
+}
+
+footer {
+  margin-top: 1em;
+  text-align: center;
+  color: var(--textColor);
+  border-top: 1px solid grey;
+  padding-bottom: 1em;
+}
+
+/* Media queries starts here */
+
+@media screen and (max-width: 320px) {
+  .fa-cont {
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .out-cont {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+@media screen and (max-width: 375px) {
+  .fa-cont {
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  .out-cont {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+@media screen and (max-width: 425px) {
+  .fa-cont {
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .out-cont {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+@media screen and (max-width: 600px) {
+  .fa-cont {
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .side {
+    width: auto;
+    padding: 10px;
+    border-radius: .5rem ;
+  }
+
+  .side h3{
+    display: none;
+  }
+
+  .out-cont {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .fa-cont {
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  .out-cont {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .fa-cont {
+    flex-direction: column;
+    margin-bottom: 1em;
+    margin: 0 auto;
+  }
+
+  main {
+    width: 60%;
+  }
+
+  .out-cont {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}

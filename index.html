@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="//db.onlinewebfonts.com/c/0e663589b576e1e340e4fc28ea99626c?family=Sitka+Small"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Convert Temperature</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="container">
+        <h1> <img class="logo" src="./logo.png" alt="logo"> Unit<span>urtle</span> Converter</h1>
+        <div class="cap">Fahrenheit To Celsius</div>
+        <div class="fa-cont">
+          <div class="side">
+            <h3>Connect with us</h3>
+            <img class="facebook" src="./facebook.png" alt="github">
+            <hr>
+            <img class="facebook" src="./github.png" alt="github">
+            <hr>
+            <img class="facebook" src="./linkedin.png" alt="github">
+          </div>
+          <input
+            type="number"
+            id="fa-input"
+            placeholder="Enter unit"
+            autofocus
+          />
+          <div class="out-cont">
+            <p class="output-c">...Answer awaits...</p>
+          </div>
+          <button>Convert</button>
+          <button class="reset">Reset</button>
+          <!-- select dropdown starts here -->
+          <select id="wizard">
+            <option value="default">Change Unit</option>
+            <option value="Fahrenheit">Fahrenheit to Celsius</option>
+            <option value="Celsius">Celsius to Fahrenheit</option>
+            <option value="meter">Meters to Kilometers</option>
+            <option value="kilometer">KiloMeters to Meters</option>
+            <option value="litter">Litters to millilitters</option>
+            <option value="millilitter">Millilitters to Litters</option>
+          </select>
+        </div>
+      </div>
+      <details>
+        <summary>Fun Fact about temperature</summary>
+        <p>
+          Temperature is just cool man, you can not hate or you will be set on
+          fire my friend
+        </p>
+        
+      </details>
+
+      <footer>
+        <h4>&copy; 2021 created by Aphiwe</h4>
+      </footer>
+      <div class="img-cont">
+        <img class="img-down" src="./footer.jpg" alt="view">
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
